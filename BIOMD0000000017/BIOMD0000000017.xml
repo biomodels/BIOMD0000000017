@@ -1,0 +1,1616 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" metaid="_925939" version="4">
+  <model id="Hoefnagel2002_PyruvateBranches" name="Hoefnagel2002_PyruvateBranches" metaid="_000001">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+      This a model from the article:
+      <br/>
+        <strong> Metabolic engineering of lactic acid bacteria, the combined approach: kinetic modelling, metabolic control and experimental analysis.
+</strong>
+        <br/>
+Hoefnagel MH,  Starrenburg MJ,  Martens DE,  Hugenholtz J,  Kleerebezem M,  Van Swam II,  Bongers R,  Westerhoff HV,  Snoep JL 
+      <em>Microbiology</em>2002 Apr; 148(4):1003-13 
+      <a href="http://www.ncbi.nlm.nih.gov/pubmed/11932446">11932446</a>,
+      <br/>
+        <strong>Abstract:</strong>
+        <br/>
+Everyone who has ever tried to radically change metabolic fluxes knows that it is often harder to determine which enzymes have to be modified than it is to actually implement these changes. In the more traditional genetic engineering approaches ’bottle-necks’ are pinpointed using qualitative, intuitive approaches, but the alleviation of suspected ’rate-limiting’ steps has not often been successful. Here the authors demonstrate that a model of pyruvate distribution in Lactococcus lactis based on enzyme kinetics in combination with metabolic control analysis clearly indicates the key control points in the flux to acetoin and diacetyl, important flavour compounds. The model presented here (available at http://jjj.biochem.sun.ac.za/wcfs.html) showed that the enzymes with the greatest effect on this flux resided outside the acetolactate synthase branch itself. Experiments confirmed the predictions of the model, i.e. knocking out lactate dehydrogenase and overexpressing NADH oxidase increased the flux through the acetolactate synthase branch from 0 to 75% of measured product formation rates.
+   </p>
+        <p> The paper does not have any figure to be put as a curation figure in the BioModels database. The model does reproduce the fluxes and control-coefficients given in Figure 2 and Table 4. To reproduce the results, the model was changed from the description in the article according to the model on JWS: the parameter Kmpyr was changed to 2.5 from 25. The equillibrium constant for PTA reaction (R4) was changed from 0.0281 to 0.0065. The Km for oxygen in the NOX reaction (R13) was changed from 0.01 to 0.2. Slight deviations between the values in the article and the model results may stem from different algorithms used for finding the steady state.   
+</p>
+        <p>This model originates from BioModels Database: A Database of Annotated Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2010 The BioModels.net Team.<br/>For more information see the <a href="http://www.ebi.ac.uk/biomodels/legal.html" target="_blank">terms of use</a>.<br/>To cite BioModels Database, please use: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20587024" target="_blank">Li C, Donizelli M, Rodriguez N, Dharuri H, Endler L, Chelliah V, Li L, He E, Henry A, Stefan MI, Snoep JL, Hucka M, Le Novère N, Laibe C (2010) BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. BMC Syst Biol., 4:92.</a>
+      </p>
+    </body>
+  </notes>
+    <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_000001">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Le Novère</vCard:Family>
+	<vCard:Given>Nicolas</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>lenov@ebi.ac.uk</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>EMBL-EBI</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Schilstra</vCard:Family>
+	<vCard:Given>Maria</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>m.j.1.schilstra@herts.ac.uk</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>SBML Team - Science and Technology Research Institute - University of Hertfordshire</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	<dcterms:created rdf:parseType="Resource">
+	<dcterms:W3CDTF>2005-03-06T20:03:34Z</dcterms:W3CDTF>
+	</dcterms:created>
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2014-04-04T14:23:02Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/MODEL6617235316"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000017"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubmed/11932446"/>
+	</rdf:Bag>
+	</bqmodel:isDescribedBy>
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006090"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006089"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006082"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	<bqbiol:isPartOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.pathway/map00620"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.pathway/map00650"/>
+	</rdf:Bag>
+	</bqbiol:isPartOf>
+	<bqbiol:hasTaxon>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/taxonomy/1358"/>
+	</rdf:Bag>
+	</bqbiol:hasTaxon>
+	<bqbiol:hasProperty>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000046"/>
+	</rdf:Bag>
+	</bqbiol:hasProperty>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+      <listOfUnitDefinitions>
+      <unitDefinition id="substance" name="millimole (default)" metaid="metaid_1000029">
+        <listOfUnits>
+          <unit scale="-3" metaid="_945c31c2-2728-4ba8-a6b0-008e7683854f" kind="mole"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="time" name="minute (default)" metaid="metaid_1000030">
+        <listOfUnits>
+          <unit metaid="_2006d0d9-838c-49b3-ba83-21197f5d9c7e" multiplier="60" kind="second"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment" metaid="_681847" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="ADP" initialAmount="4.9" hasOnlySubstanceUnits="true" metaid="_681867" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681867">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16761"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00008"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="NAD" initialAmount="6.33" hasOnlySubstanceUnits="true" metaid="_681887" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681887">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15846"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00003"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="ATP" initialAmount="0.1" hasOnlySubstanceUnits="true" metaid="_681908" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681908">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15422"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00002"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="NADH" initialAmount="3.67" hasOnlySubstanceUnits="true" metaid="_681927" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681927">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16908"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00004"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="pyruvate" initialAmount="1" hasOnlySubstanceUnits="true" metaid="_681947" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681947">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15361"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00022"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="lactate" initialAmount="0.1" hasOnlySubstanceUnits="true" metaid="_681968" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681968">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:24996"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00186"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="CoA" initialAmount="1" hasOnlySubstanceUnits="true" metaid="_681987" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_681987">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15346"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00010"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="halfglucose" initialAmount="30" hasOnlySubstanceUnits="true" metaid="_682008" boundaryCondition="true" compartment="compartment"/>
+      <species id="AcCoA" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682028" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682028">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15351"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00024"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="AcP" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682067" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682067">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15350"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00227"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Ac" initialAmount="1" hasOnlySubstanceUnits="true" metaid="_682088" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682088">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:30089"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00033"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="AcO" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682107" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682107">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15343"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00084"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="EtOH" initialAmount="1" hasOnlySubstanceUnits="true" metaid="_682127" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682127">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16236"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00469"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="AcLac" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682148" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682148">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16444"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00900"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="AcetoinIn" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682168" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682168">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15688"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00466"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="AcetoinOut" initialAmount="0" hasOnlySubstanceUnits="true" metaid="_682187" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682187">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15688"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00466"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Butanediol" initialAmount="0.01" hasOnlySubstanceUnits="true" metaid="_682208" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682208">
+	<bqbiol:hasVersion>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16812"/>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16982"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C03046"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C03044"/>
+	</rdf:Bag>
+	</bqbiol:hasVersion>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="O2" initialAmount="0.2" hasOnlySubstanceUnits="true" metaid="_682227" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682227">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15379"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00007"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="PO4" constant="true" initialAmount="10" metaid="metaid_0000037" boundaryCondition="true" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000037">
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:18367"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00009"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" metaid="_682269" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682269">
+	<bqbiol:isPartOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.pathway/map00010"/>
+	</rdf:Bag>
+	</bqbiol:isPartOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ADP" metaid="f14d7b63-e180-4f6a-8c0c-df95e58be52c"/>
+          <speciesReference species="NAD" metaid="_979e9fef-003b-48a2-bf4c-5669994009a1"/>
+          <speciesReference species="halfglucose" metaid="dd54c4c9-781a-44dd-b005-ef0246eb0218"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" metaid="_4d888d23-0c05-4906-88a9-d744aae5fafb"/>
+          <speciesReference species="NADH" metaid="_22de7c1c-4a9d-49bd-945b-11e6c2af3618"/>
+          <speciesReference species="pyruvate" metaid="_0f01538c-5f4f-42b5-9c5b-909f77d4ce79"/>
+        </listOfProducts>
+        <kineticLaw metaid="d6985d3f-a776-4339-b3f5-2a64b8f4e44c">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <cn> 2 </cn>
+                <ci> V_1 </ci>
+                <apply>
+                  <divide/>
+                  <ci> halfglucose </ci>
+                  <apply>
+                    <times/>
+                    <cn> 2 </cn>
+                    <ci> Kglc_1 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> NAD </ci>
+                  <ci> Knad_1 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> ADP </ci>
+                  <ci> Kadp_1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> halfglucose </ci>
+                    <apply>
+                      <times/>
+                      <cn> 2 </cn>
+                      <ci> Kglc_1 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> pyruvate </ci>
+                    <ci> Kpyr_1 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_1 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_1 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> ADP </ci>
+                    <ci> Kadp_1 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> ATP </ci>
+                    <ci> Katp_1 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_1" metaid="_070863" value="2397"/>
+            <parameter id="Kglc_1" metaid="_070864" value="0.1"/>
+            <parameter id="Knad_1" metaid="_070865" value="0.1412"/>
+            <parameter id="Kadp_1" metaid="_070866" value="0.04699"/>
+            <parameter id="Kpyr_1" metaid="_070868" value="2.5"/>
+            <parameter id="Knadh_1" metaid="_070870" value="0.08999"/>
+            <parameter id="Katp_1" metaid="_070872" value="0.01867"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R2" metaid="_682298" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682298">
+	<bqbiol:hasVersion>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.27"/>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.28"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00703"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00704"/>
+	<rdf:li rdf:resource="http://identifiers.org/reactome/REACT_178"/>
+	</rdf:Bag>
+	</bqbiol:hasVersion>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NADH" metaid="_220e9d44-06cd-446d-8644-9942a64e6bf2"/>
+          <speciesReference species="pyruvate" metaid="_7952ead6-062d-4fa1-8391-5d05ef076d18"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" metaid="b8dea528-6752-4e5d-8ddc-6f614b598117"/>
+          <speciesReference species="lactate" metaid="_48b356ff-3c83-4c63-b670-a591290447ff"/>
+        </listOfProducts>
+        <kineticLaw metaid="_4598f125-3a13-42a5-8f7b-2318c6b5a47a">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> pyruvate </ci>
+                      <ci> NADH </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> lactate </ci>
+                        <ci> NAD </ci>
+                      </apply>
+                      <ci> Keq_2 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kpyr_2 </ci>
+                    <ci> Knadh_2 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> pyruvate </ci>
+                    <ci> Kpyr_2 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> lactate </ci>
+                    <ci> Klac_2 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_2 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_2 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_2" metaid="_070873" value="5118"/>
+            <parameter id="Keq_2" metaid="_070874" value="2.112069E4"/>
+            <parameter id="Kpyr_2" metaid="_070875" value="1.5"/>
+            <parameter id="Knadh_2" metaid="_070876" value="0.08"/>
+            <parameter id="Klac_2" metaid="_070877" value="100"/>
+            <parameter id="Knad_2" metaid="_070879" value="2.4"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R3" metaid="_682324" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682324">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.1.51"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00209"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NAD" metaid="_36a89cb7-14c8-45b6-b81c-5726a0082799"/>
+          <speciesReference species="pyruvate" metaid="d57c83a9-830a-48d7-9ed4-393a84f180f3"/>
+          <speciesReference species="CoA" metaid="_83e95fee-6a41-47ce-8468-ddcab040ff57"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NADH" metaid="a37f6e93-4c7f-4776-9273-790b8586826e"/>
+          <speciesReference species="AcCoA" metaid="_6589e3fd-b6ef-45a8-8dd4-375106abc9d0"/>
+        </listOfProducts>
+        <kineticLaw metaid="_0cfaf8a9-0938-4413-b25c-cb2c3a9c8cd5">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_3 </ci>
+                <apply>
+                  <divide/>
+                  <ci> pyruvate </ci>
+                  <ci> Kpyr_3 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> NAD </ci>
+                  <ci> Knad_3 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> CoA </ci>
+                  <ci> Kcoa_3 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> NAD </ci>
+                  <apply>
+                    <plus/>
+                    <ci> NAD </ci>
+                    <apply>
+                      <times/>
+                      <ci> Ki_3 </ci>
+                      <ci> NADH </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> pyruvate </ci>
+                    <ci> Kpyr_3 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_3 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_3 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> CoA </ci>
+                    <ci> Kcoa_3 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> AcCoA </ci>
+                    <ci> Kaccoa_3 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_3" metaid="_070880" value="259"/>
+            <parameter id="Kpyr_3" metaid="_070881" value="1"/>
+            <parameter id="Knad_3" metaid="_070882" value="0.4"/>
+            <parameter id="Kcoa_3" metaid="_070883" value="0.014"/>
+            <parameter id="Ki_3" metaid="_070886" value="46.4159"/>
+            <parameter id="Knadh_3" metaid="_070888" value="0.1"/>
+            <parameter id="Kaccoa_3" metaid="_070890" value="0.008"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R4" metaid="_682346" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682346">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/2.3.1.8"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00230"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="AcCoA" metaid="_82a6d353-4c5d-47f9-a7f8-991c48361f6f"/>
+          <speciesReference species="PO4" metaid="ab377cef-75a2-4262-8b3c-47dc1af08c09"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CoA" metaid="_0a474d78-b039-4263-8b2e-9eff03e67320"/>
+          <speciesReference species="AcP" metaid="ffa0bba4-4da4-4b62-a05a-cdbf08984c41"/>
+        </listOfProducts>
+        <kineticLaw metaid="c4ce9dd9-8d59-4438-b6a4-79872667e664">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_4 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> AcCoA </ci>
+                      <ci> PO4 </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> AcP </ci>
+                        <ci> CoA </ci>
+                      </apply>
+                      <ci> Keq_4 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kiaccoa_4 </ci>
+                    <ci> Kpi_4 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> AcCoA </ci>
+                  <ci> Kiaccoa_4 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> PO4 </ci>
+                  <ci> Kipi_4 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> AcP </ci>
+                  <ci> Kiacp_4 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> CoA </ci>
+                  <ci> Kicoa_4 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> AcCoA </ci>
+                    <ci> PO4 </ci>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kiaccoa_4 </ci>
+                    <ci> Kpi_4 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> AcP </ci>
+                    <ci> CoA </ci>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kacp_4 </ci>
+                    <ci> Kicoa_4 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_4" metaid="_070891" value="42"/>
+            <parameter id="Keq_4" metaid="_070892" value="0.0065"/>
+            <parameter id="Kiaccoa_4" metaid="_070893" value="0.2"/>
+            <parameter id="Kpi_4" metaid="_070894" value="2.6"/>
+            <parameter id="Kipi_4" metaid="_070897" value="2.6"/>
+            <parameter id="Kiacp_4" metaid="_070899" value="0.2"/>
+            <parameter id="Kicoa_4" metaid="_070901" value="0.029"/>
+            <parameter id="Kacp_4" metaid="_070903" value="0.7"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R5" metaid="_682374" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682374">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.2.1"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00315"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ADP" metaid="_9ff94e87-466a-4b42-841b-80274c15f5aa"/>
+          <speciesReference species="AcP" metaid="c20b5754-2770-4583-b77c-da87bc2c0303"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" metaid="_57d8cad8-dda6-4cb4-8a5c-c391f50eaae8"/>
+          <speciesReference species="Ac" metaid="_94cebd9b-8453-4eb4-ac66-0b592c8d864e"/>
+        </listOfProducts>
+        <kineticLaw metaid="b55c7e2e-fb86-453c-beaf-05526a0ef6d4">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_5 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> AcP </ci>
+                      <ci> ADP </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> Ac </ci>
+                        <ci> ATP </ci>
+                      </apply>
+                      <ci> Keq_5 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kadp_5 </ci>
+                    <ci> Kacp_5 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcP </ci>
+                    <ci> Kacp_5 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Ac </ci>
+                    <ci> Kac_5 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> ADP </ci>
+                    <ci> Kadp_5 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> ATP </ci>
+                    <ci> Katp_5 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_5" metaid="_070904" value="2700"/>
+            <parameter id="Keq_5" metaid="_070905" value="174.217"/>
+            <parameter id="Kadp_5" metaid="_070906" value="0.5"/>
+            <parameter id="Kacp_5" metaid="_070907" value="0.16"/>
+            <parameter id="Kac_5" metaid="_070909" value="7"/>
+            <parameter id="Katp_5" metaid="_070911" value="0.07"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R6" metaid="_682394" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682394">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.2.1.10"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00228"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NADH" metaid="_49a9a3e2-cb34-4a5f-b8a3-47d898b9fc09"/>
+          <speciesReference species="AcCoA" metaid="_5108239f-d9ba-4b70-b202-69bc5e5ca5c3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" metaid="_249d37c4-dcb3-40d0-af2f-32fb68f00b96"/>
+          <speciesReference species="CoA" metaid="b9ad463e-3651-45a2-bffb-ce75dbb5c77f"/>
+          <speciesReference species="AcO" metaid="_234873dc-7d48-4dde-983d-e6b33fdb5375"/>
+        </listOfProducts>
+        <kineticLaw metaid="c236fdb5-6117-4189-8811-b24fd9784374">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> AcCoA </ci>
+                      <ci> NADH </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> CoA </ci>
+                        <ci> NAD </ci>
+                        <ci> AcO </ci>
+                      </apply>
+                      <ci> Keq_6 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kaccoa_6 </ci>
+                    <ci> Knadh_6 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_6 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_6 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcCoA </ci>
+                    <ci> Kaccoa_6 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> CoA </ci>
+                    <ci> Kcoa_6 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcO </ci>
+                    <ci> Kaco_6 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_6" metaid="_070912" value="97"/>
+            <parameter id="Keq_6" metaid="_070913" value="1"/>
+            <parameter id="Kaccoa_6" metaid="_070914" value="0.007"/>
+            <parameter id="Knadh_6" metaid="_070915" value="0.025"/>
+            <parameter id="Knad_6" metaid="_070917" value="0.08"/>
+            <parameter id="Kcoa_6" metaid="_070919" value="0.008"/>
+            <parameter id="Kaco_6" metaid="_070921" value="10"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R7" metaid="_682416" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682416">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.1"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00754"/>
+	<rdf:li rdf:resource="http://identifiers.org/reactome/REACT_799"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NADH" metaid="_9fbf8215-c5bd-40b8-ad3f-88b841879596"/>
+          <speciesReference species="AcO" metaid="a1d01bb9-cf52-424e-b825-1c880fc383b9"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" metaid="d2c01df2-0a97-4ea1-ab1f-b85d4ae17cd2"/>
+          <speciesReference species="EtOH" metaid="ef4e0a59-4a87-40d8-8374-bdc62a44ea06"/>
+        </listOfProducts>
+        <kineticLaw metaid="_0bd4aae9-9508-4ef0-86a5-1a06cff8f3aa">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_7 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> AcO </ci>
+                      <ci> NADH </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> EtOH </ci>
+                        <ci> NAD </ci>
+                      </apply>
+                      <ci> Keq_7 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kaco_7 </ci>
+                    <ci> Knadh_7 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_7 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_7 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcO </ci>
+                    <ci> Kaco_7 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> EtOH </ci>
+                    <ci> Ketoh_7 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_7" metaid="_070922" value="162"/>
+            <parameter id="Keq_7" metaid="_070923" value="1.23549E4"/>
+            <parameter id="Kaco_7" metaid="_070924" value="0.03"/>
+            <parameter id="Knadh_7" metaid="_070925" value="0.05"/>
+            <parameter id="Knad_7" metaid="_070927" value="0.08"/>
+            <parameter id="Ketoh_7" metaid="_070929" value="1"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R8" metaid="_682444" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682444">
+              <bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/2.2.1.6"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R00006"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="pyruvate" metaid="d9f02c30-230f-41d3-a25f-96b1044f5287" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcLac" metaid="_43427426-a0f3-4c80-a20a-9ec3be08419e"/>
+        </listOfProducts>
+        <kineticLaw metaid="_7a23d009-40ed-4733-9a6b-43ea87a8094f">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_8 </ci>
+                <apply>
+                  <divide/>
+                  <ci> pyruvate </ci>
+                  <ci> Kpyr_8 </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcLac </ci>
+                    <apply>
+                      <times/>
+                      <ci> pyruvate </ci>
+                      <ci> Keq_8 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <divide/>
+                      <ci> pyruvate </ci>
+                      <ci> Kpyr_8 </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> AcLac </ci>
+                      <ci> Kaclac_8 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <ci> n_8 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <power/>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <divide/>
+                      <ci> pyruvate </ci>
+                      <ci> Kpyr_8 </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> AcLac </ci>
+                      <ci> Kaclac_8 </ci>
+                    </apply>
+                  </apply>
+                  <ci> n_8 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_8" metaid="_070930" value="600"/>
+            <parameter id="Kpyr_8" metaid="_070931" value="50"/>
+            <parameter id="Keq_8" metaid="_070932" value="9E12"/>
+            <parameter id="Kaclac_8" metaid="_070933" value="100"/>
+            <parameter id="n_8" metaid="_070935" value="2.4"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R9" metaid="_682460" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682460">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02947"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/4.1.1.5"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="AcLac" metaid="d2378495-297d-4077-a77b-ce6903865460"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcetoinIn" metaid="_397ce338-a149-450d-9365-0fe3d49ef45c"/>
+        </listOfProducts>
+        <kineticLaw metaid="_694827f3-9593-4f09-b58f-a2f443966f21">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_9 </ci>
+                <apply>
+                  <divide/>
+                  <ci> AcLac </ci>
+                  <ci> Kaclac_9 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> AcLac </ci>
+                  <ci> Kaclac_9 </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> AcetoinIn </ci>
+                  <ci> Kacet_9 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_9" metaid="_070936" value="106"/>
+            <parameter id="Kaclac_9" metaid="_070937" value="10"/>
+            <parameter id="Kacet_9" metaid="_070938" value="100"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R10" metaid="_682480" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682480">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0015562"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="AcetoinIn" metaid="f76729e8-30f7-45d6-80c4-2c7436acee94"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcetoinOut" metaid="_374ad5f5-f836-4ca0-917b-c18f312f862c"/>
+        </listOfProducts>
+        <kineticLaw metaid="_0460d14d-2514-4145-8eb4-6c15f78c4d4a">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_10 </ci>
+                <apply>
+                  <divide/>
+                  <ci> AcetoinIn </ci>
+                  <ci> Kacet_10 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> AcetoinIn </ci>
+                  <ci> Kacet_10 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_10" metaid="_070939" value="200"/>
+            <parameter id="Kacet_10" metaid="_070940" value="5"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R11" metaid="_682500" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682500">
+	<bqbiol:hasVersion>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.4"/>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/1.1.1.76"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02344"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.reaction/R02946"/>
+	</rdf:Bag>
+	</bqbiol:hasVersion>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NADH" metaid="_5ea122e4-3495-42f2-8343-6e5e50ffa046"/>
+          <speciesReference species="AcetoinIn" metaid="_20f1b9a7-b840-45d4-bec4-a176e80c3c38"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" metaid="_1c0b268f-7e9a-4053-a99f-8953e3422a8e"/>
+          <speciesReference species="Butanediol" metaid="_614e3aaf-7c8a-45e7-8253-50d1aa07600f"/>
+        </listOfProducts>
+        <kineticLaw metaid="_02e80196-0c9a-4b89-a6cf-93690c535a40">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_11 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <times/>
+                      <ci> AcetoinIn </ci>
+                      <ci> NADH </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> Butanediol </ci>
+                        <ci> NAD </ci>
+                      </apply>
+                      <ci> Keq_11 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Kacet_11 </ci>
+                    <ci> Knadh_11 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> AcetoinIn </ci>
+                    <ci> Kacet_11 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Butanediol </ci>
+                    <ci> Kbut_11 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_11 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_11 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_11" metaid="_070942" value="105"/>
+            <parameter id="Keq_11" metaid="_070943" value="1400"/>
+            <parameter id="Kacet_11" metaid="_070945" value="0.06"/>
+            <parameter id="Knadh_11" metaid="_070947" value="0.02"/>
+            <parameter id="Kbut_11" metaid="_070949" value="2.6"/>
+            <parameter id="Knad_11" metaid="_070952" value="0.16"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R12" metaid="_682524" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682524">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0016887"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ATP" metaid="_42ec8f00-110a-43d4-8cdc-88b3acafb923"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ADP" metaid="_4d56a8a9-2ed9-4709-9ea9-fb00586a53f7"/>
+        </listOfProducts>
+        <kineticLaw metaid="_2e5344b7-3fcf-47f2-9c67-eb4450a6d966">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_12 </ci>
+                <apply>
+                  <power/>
+                  <apply>
+                    <divide/>
+                    <ci> ATP </ci>
+                    <apply>
+                      <times/>
+                      <ci> ADP </ci>
+                      <ci> Katp_12 </ci>
+                    </apply>
+                  </apply>
+                  <ci> n_12 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <power/>
+                  <apply>
+                    <divide/>
+                    <ci> ATP </ci>
+                    <apply>
+                      <times/>
+                      <ci> ADP </ci>
+                      <ci> Katp_12 </ci>
+                    </apply>
+                  </apply>
+                  <ci> n_12 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_12" metaid="_070953" value="900"/>
+            <parameter id="Katp_12" metaid="_070954" value="6.196"/>
+            <parameter id="n_12" metaid="_070955" value="2.58"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R13" metaid="_682540" reversible="false">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_682540">
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006116"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="NADH" metaid="_7e8fe280-92bb-4827-a5dd-35167a6a6bba"/>
+          <speciesReference species="O2" metaid="b8e811cf-fb4c-4882-87ad-17b6570ec7af"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD" metaid="_739e39b1-048b-4ed6-93e9-a916d81f6c5c"/>
+        </listOfProducts>
+        <kineticLaw metaid="ba8ed574-656b-4f54-922f-5b29ecfecc87">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_13 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> NADH </ci>
+                    <ci> O2 </ci>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> Knadh_13 </ci>
+                    <ci> Ko_13 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> NADH </ci>
+                    <ci> Knadh_13 </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> NAD </ci>
+                    <ci> Knad_13 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> O2 </ci>
+                    <ci> Ko_13 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="V_13" metaid="_070956" value="118"/>
+            <parameter id="Knadh_13" metaid="_070957" value="0.041"/>
+            <parameter id="Ko_13" metaid="_070958" value="0.2"/>
+            <parameter id="Knad_13" metaid="_070959" value="1"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R14" metaid="_682562" reversible="false">
+        <listOfReactants>
+          <speciesReference species="AcLac" metaid="_55e20307-d182-4a93-ae3e-f3e38228d54d"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcetoinIn" metaid="_1da87ed2-510e-4a5f-81e9-8df6012bb6f6"/>
+        </listOfProducts>
+        <kineticLaw metaid="_306dc8f1-352c-4c9f-8241-3e9fe3c64470">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> k_14 </ci>
+              <ci> AcLac </ci>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k_14" metaid="_070960" value="0.0003"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
